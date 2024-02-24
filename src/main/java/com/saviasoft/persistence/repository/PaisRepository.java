@@ -13,7 +13,7 @@ import java.util.List;
 @Repository
 public interface PaisRepository extends JpaRepository<Pais, Integer> {
     @Query(value="SELECT * FROM saviasoft.pais where estado = 1", nativeQuery=true)
-    List<Pais> getPais();
+    List<Pais> getPaisRepository();
 
 
 

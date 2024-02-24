@@ -68,6 +68,11 @@ public class PersonaController {
 //
 //    }
 
+    @GetMapping("/pais")
+    public List<Pais> getPais(){
+        return this.personaService.getPaisService();
+    }
+
 
 
 }

@@ -16,7 +16,7 @@ public class PersonaService {
 
     private final PersonaRepository personaRepository;
 
-    private  final PaisRepository paisRepository;
+    private final PaisRepository paisRepository;
     public PersonaService(PersonaRepository personaRepository, PaisRepository paisRepository) {
         this.personaRepository = personaRepository;
         this.paisRepository = paisRepository;
@@ -59,6 +59,15 @@ public class PersonaService {
 //
 //        return this.paisRepository.getPais();
 //    }
+
+
+
+
+    public List<Pais> getPaisService(){
+        return this.paisRepository.getPaisRepository();
+    }
+
+
 
 
 }
